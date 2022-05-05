@@ -5,8 +5,10 @@ sixth workshop of automation and control of process class
   - [Introduccion](#introduccion)
   - [Elementos](#elementos)
     - [Sensor BME280](#sensor)
-    - [Raspberry pi 3](#raspberry)
-    - [Raspberry Pi Azure IoT Online Simulator](#Azure IoT)
+    - [Raspberry pi 3](#raspberry-pi-3)
+    - [Raspberry Pi Azure IoT Online Simulator](#raspberry-pi-azure-iot-online-simulator)
+  - [Conectividad](#conectividad)
+  - [Analisis de Datos](#analisis-de-datos)
 
 ## Introduccion
 
@@ -42,7 +44,7 @@ Por ultimo, este sensor soporta 2 interfaces digitales fundamentales que son i2C
 
 Referencia: [BME280 Datasheet](https://itbrainpower.net/downloadables/BST-BME280-DS002-1509607.pdf) 
 
-### Raspberry
+### Raspberry pi 3
 
 Se utiliza la Raspberry Pi 3 Modelo B, está placa contiene las siguientes espcificaciones:
 
@@ -61,7 +63,7 @@ Se utiliza la Raspberry Pi 3 Modelo B, está placa contiene las siguientes espci
 
 Referencia: [Raspberry Pi 3 Model B](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/)
 
-### Azure IoT
+### Raspberry Pi Azure IoT Online Simulator
 
 La plataforma de Azure provee un entorno de pruebas para dispositivos IoT. Para el Rasbperry Pi 3, utiliza las siguientes especificaciones del entorno:
 
@@ -74,3 +76,7 @@ La plataforma de Azure provee un entorno de pruebas para dispositivos IoT. Para 
 - Libreria de uso de pines de Raspberry Pi.
 
 Referencia: [Raspberry Pi Web Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/)
+
+## Conectividad
+
+## Analisis de Datos
