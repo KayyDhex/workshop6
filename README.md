@@ -7,6 +7,8 @@
     - [Raspberry pi 3](#raspberry-pi-3)
     - [Raspberry Pi Azure IoT Online Simulator](#raspberry-pi-azure-iot-online-simulator)
   - [Conectividad](#conectividad)
+    - [Protocolo MQTT](#protocolo-mqtt)
+    - [Protocolo I2C]()
   - [Analisis de Datos](#analisis-de-datos)
 
 ## Introduccion
@@ -78,4 +80,18 @@ Referencia: [Raspberry Pi Web Simulator](https://azure-samples.github.io/raspber
 
 ## Conectividad
 
+### Protocolo MQTT
+
+En primera instancia, la nube de Azure utiliza un protocolo MQTT (Message Queing Telemetry Transport) el cual es un protocolo de comunicación M2M (machine-to-machine) de tipo message queue. Este protocolo busca que los clientes (publicadores ó suscriptores) intercambien datos con un servidor centralizado o broker (en este caso, Azure IoT Hub).
+
+Referencias: 
+- [¿QUÉ ES MQTT? SU IMPORTANCIA COMO PROTOCOLO IOT](https://www.luisllamas.es/que-es-mqtt-su-importancia-como-protocolo-iot/)
+- [MQTT Version 3.1.1 Plus Errata 01](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.pdf)
+
+### Protocolo I2C
+
+Adicionalmente
+
 ## Analisis de Datos
+
+Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280
