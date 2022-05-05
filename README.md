@@ -1,5 +1,4 @@
 # Workshop6
-sixth workshop of automation and control of process class
 
 - [Workshop6](#workshop6)
   - [Introduccion](#introduccion)
