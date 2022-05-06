@@ -8,7 +8,7 @@
     - [Raspberry Pi Azure IoT Online Simulator](#raspberry-pi-azure-iot-online-simulator)
   - [Conectividad](#conectividad)
     - [Protocolo MQTT](#protocolo-mqtt)
-    - [Protocolo I2C]()
+    - [Protocolo I2C](#protocolo-i2c)
   - [Analisis de Datos](#analisis-de-datos)
 
 ## Introduccion
@@ -90,8 +90,34 @@ Referencias:
 
 ### Protocolo I2C
 
-Adicionalmente
+Adicionalmente, la comunicacion entre el sensor y el controlador es mediante un protocolo I2C. La configuracion base se muestra en las siguientes lineas de codigo:
+<pre><code>
+const BME280_OPTION = {
+  i2cBusNo: 1, // defaults to 1
+  i2cAddress: BME280.BME280_DEFAULT_I2C_ADDRESS() // defaults to 0x77
+};
+
+</code></pre>
 
 ## Analisis de Datos
 
-Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280
+Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280. Los datos devueltos son la temperatura y humedad del ambiente. Cuando este inicia, prende un led que representa la conexion efectiva y la obtencion de los datos por medio de un JSON cada segundo.
+<pre><code>
+
+function getMessage(cb) {
+  messageId++;
+  sensor.readSensorData()
+    .then(function (data) {
+      cb(JSON.stringify({
+        messageId: messageId,
+        deviceId: 'Raspberry Pi Web Client',
+        temperature: data.temperature_C,
+        humidity: data.humidity
+      }), data.temperature_C > 30);
+    })
+    .catch(function (err) {
+      console.error('Failed to read out sensor data: ' + err);
+    });
+}
+
+</code></pre>
