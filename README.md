@@ -95,8 +95,7 @@ Referencias:
 ### Protocolo I2C
 
 Adicionalmente, la comunicacion entre el sensor y el controlador es mediante un protocolo I2C. La configuracion base se muestra en las siguientes lineas de codigo:
-<pre><code>
-const BME280_OPTION = {
+<pre><code>const BME280_OPTION = {
   i2cBusNo: 1, // defaults to 1
   i2cAddress: BME280.BME280_DEFAULT_I2C_ADDRESS() // defaults to 0x77
 };
@@ -106,8 +105,7 @@ const BME280_OPTION = {
 
 Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280. Los datos devueltos son la temperatura y humedad del ambiente. Cuando este inicia, prende un led que representa la conexion efectiva y la obtencion de los datos por medio de un JSON cada segundo.
 
-<pre><code>
-function getMessage(cb) {
+<pre><code>function getMessage(cb) {
   messageId++;
   sensor.readSensorData()
     .then(function (data) {
