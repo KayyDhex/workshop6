@@ -101,9 +101,11 @@ Adicionalmente, la comunicacion entre el sensor y el controlador es mediante un 
 };
 </code></pre>
 
+I2C es un bus de comunicaciones entre circuitos integrados que consiste en dos hilos. Se usa de esta forma ya que RaspBerry PI dispone de dos perifericos para su implementacion. La direccion en hexadecimal por defecto es 0x77 y el bus de comunicacion es el numero 1.
+
 ## Analisis de Datos
 
-Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280. Los datos devueltos son la temperatura y humedad del ambiente. Cuando este inicia, prende un led que representa la conexion efectiva y la obtencion de los datos por medio de un JSON cada segundo.
+Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280. Los datos devueltos son la temperatura y humedad del ambiente. Cuando este inicia, prende un led que representa la conexion efectiva y la obtencion de los datos por medio de un JSON cada segundo al servidor de Azure IoT Hub.
 
 <pre><code>function getMessage(cb) {
   messageId++;
