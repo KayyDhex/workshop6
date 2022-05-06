@@ -16,6 +16,7 @@
 Para esta practica se realizo un montaje realizado en la nube de Azure. Se utilizo un sensor de presion, temperatura y humedad BME280, una placa raspberry pi 3 model b v1.2 y un Led. Se utilizo Javascript para establecer la comunicacion mediante Node.JS. Finalmente, se uso tambien el laboratorio de pruebas de la nube de Azure para todo el tema de IoT.
 
 ![Montage](https://github.com/KayyDhex/workshop6/blob/aa05ba0eabc3f42445c2dc715425bb641bdafe4d/1.PNG)
+[Basado en la practica: Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 
 ## Elementos
 
