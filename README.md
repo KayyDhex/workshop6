@@ -15,6 +15,8 @@
 
 Para esta practica se realizo un montaje realizado en la nube de Azure. Se utilizo un sensor de presion, temperatura y humedad BME280, una placa raspberry pi 3 model b v1.2 y un Led. Se utilizo Javascript para establecer la comunicacion mediante Node.JS. Finalmente, se uso tambien el laboratorio de pruebas de la nube de Azure para todo el tema de IoT.
 
+![Montage](https://github.com/KayyDhex/workshop6/blob/aa05ba0eabc3f42445c2dc715425bb641bdafe4d/1.PNG)
+
 ## Elementos
 
 ### Sensor
@@ -83,6 +85,8 @@ Referencia: [Raspberry Pi Web Simulator](https://azure-samples.github.io/raspber
 ### Protocolo MQTT
 
 En primera instancia, la nube de Azure utiliza un protocolo MQTT (Message Queing Telemetry Transport) el cual es un protocolo de comunicación M2M (machine-to-machine) de tipo message queue. Este protocolo busca que los clientes (publicadores ó suscriptores) intercambien datos con un servidor centralizado o broker (en este caso, Azure IoT Hub).
+
+![MQTT](https://github.com/KayyDhex/workshop6/blob/aa05ba0eabc3f42445c2dc715425bb641bdafe4d/2iot.PNG)
 
 Referencias: 
 - [¿QUÉ ES MQTT? SU IMPORTANCIA COMO PROTOCOLO IOT](https://www.luisllamas.es/que-es-mqtt-su-importancia-como-protocolo-iot/)
