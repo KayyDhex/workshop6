@@ -100,14 +100,13 @@ const BME280_OPTION = {
   i2cBusNo: 1, // defaults to 1
   i2cAddress: BME280.BME280_DEFAULT_I2C_ADDRESS() // defaults to 0x77
 };
-
 </code></pre>
 
 ## Analisis de Datos
 
 Para la escritura de los datos, se usa la interfaz I2C en la configuracion del sensor BME280. Los datos devueltos son la temperatura y humedad del ambiente. Cuando este inicia, prende un led que representa la conexion efectiva y la obtencion de los datos por medio de un JSON cada segundo.
-<pre><code>
 
+<pre><code>
 function getMessage(cb) {
   messageId++;
   sensor.readSensorData()
@@ -123,5 +122,4 @@ function getMessage(cb) {
       console.error('Failed to read out sensor data: ' + err);
     });
 }
-
 </code></pre>
